@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéShop</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<header class="header">
+
+    <a href="index.html" class="header-title"><h1>PokéShop</h1></a>
+
+    <div class="buttons-container">
+        <div class="buttons">
+            <button onclick="fetchPokemonByType('water')">Eau</button>
+            <button onclick="fetchPokemonByType('fire')">Feu</button>
+            <button onclick="fetchPokemonByType('grass')">Plante</button>
+            <button onclick="fetchPokemonByType('electric')">Électrique</button>
+        </div>   
+    </div>
+
+    <div class="cart-icon">
+        <a href="cart.html">🛒</a>
+    </div>
+    
+</header>
+
+<body>
+
+    <div id="pokemonList" class="pokemon-grid"></div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
